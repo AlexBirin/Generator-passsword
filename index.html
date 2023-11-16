@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/password/style.css">
+</head>
+<body>
+<div class="password-generator row jcc aic">
+    <div class="container column jcc aic">
+      <div class="password">
+        <div class="password-field js-password-field row jcc aic">
+        </div>
+      </div>
+      <div class="parameters">
+        <div class="desc"> Password Length</div>
+        <div> 
+          <input type="number" min="5" max="30" step="1" value="5" class="lenght-item js-length-item" >
+          <input type="range" min="5" max="30" step="1" value="5" class="lenght-range js-length-range">
+        </div>
+        <div class="checkbox">
+          <div class="parametr">
+            <input type="checkbox" id="number" class="checkbox_input js-number">
+            <label for="number" class="checkbox_label"> Number</label>
+          </div>
+          <div class="parametr">
+            <input type="checkbox" id="symbols" class="checkbox_input js-symbols">
+            <label for="symbols" class="checkbox_label"> Symbols</label>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+          <button class="btn js-btn-generate">Generate</button>
+      </div>
+    </div>
+  </div>
+
+    
+    <script src="/password/main.js"></script>
+</body>
+</html>
